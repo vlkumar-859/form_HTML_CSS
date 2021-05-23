@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		REGISTRATION FORM
+	</title>
+	<link rel="stylesheet" href="regis.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header-1">
+			REGISTRATON FORM
+		</div>
+	</div>
+	<form id="regisForm">
+		<div>
+			<label for="fname" class="to_left">First Name </label>
+			<input type="text" class="ip" placeholder="FIRST NAME" name="fname" id="fname"><br>
+		</div>
+		<div>
+			<label for="lname" class="to_left">Last  Name </label>
+			<input type="text" class="ip" placeholder="LAST NAME" name="lname" id="lname"><br>
+		</div>
+		<div>Gender</div>
+		<div class="gender">
+			<input type="radio" class="opt" name="gender" id="male" value="male">
+			<label for="male">Male</label>
+			<input type="radio" class="opt" name="gender" value="female" id="female">
+			<label for="female">Female </label><br>
+		</div>
+		<label for="qual" class="qual">Quaification </label>
+		<select id="qual" name="qual">
+			<option value="1">ssc</option>
+			<option value="2">inter</option>
+			<option value="3">B.Tech</option>
+			<option value="4">M.Tech</option>
+			<option value="5">phd</option>
+		</select><br>
+		<div>
+			<label for="mail" class="to_left">Email</label>
+			<input type="email" class="ip" style="font-size: 20px" placeholder="abc@gmail.com" name="mail" id="mail"><br>
+		</div>
+		<div>
+			<label for="number" class="to_left">Mobile </label>
+			<input type="tel" class="ip" name="number" placeholder="1234567890" id="number" pattern="[0-9]{10}" maxlength="10"><br>
+		</div>
+		<div>
+			Address<br>
+		</div>
+		<textarea id="address" placeholder="ADDRESS..!" name="address" rows="4" cols="70">
+		</textarea>
+	</form>
+	<div class="footer">
+		<div class="final">
+			<button type="submit" form="regisForm" id="submit">submit</button>
+		</div>
+		<div class="final">
+			<button type="reset" form="regisForm" id="reset" value="reset">reset</button>
+		</div>
+	</div>
+</body>
+</html>
